@@ -1,13 +1,64 @@
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.8rem;
+  font-family: "Zilla Slab", serif;
+}
+.header {
+  background-image: url("https://images.unsplash.com/photo-1534527489986-3e3394ca569c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  background-position: bottom;
+  padding: 10rem;
+  text-align: center;
+  border-radius: 4rem;
+}
+h1 {
+  color: #eeeeee;
+  font-size: 4rem;
+  box-shadow: 1rem 1rem 1rem 1rem #222831;
+  border-radius: 2rem;
+}
+.cjAnalysis {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  margin: 1rem;
+}
+select,
+input {
+  color: #eeeeee;
+  border: 1rem ridge #eeeeee;
+  background-color: #393e46;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  font-size: 1.6rem;
+}
+p {
+  color: #393e46;
+  border-bottom: 1rem ridge #eeeeee;
+  padding: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Media Query For Mobile */
+
+@media (max-width: 650px) {
+  h1 {
+    width: 100%;
+    box-shadow: none;
+    color: #222831;
+    text-align: center;
+    border-bottom: 1rem ridge #222831;
+    border-radius: 1rem;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
